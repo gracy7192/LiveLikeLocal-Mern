@@ -196,7 +196,7 @@ const ListingDetail = () => {
                   height="100%"
                   style={{ border: 0 }}
                   loading="lazy"
-                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${listing.location.lat},${listing.location.lng}&zoom=12`}
+                  src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=${listing.location.lat},${listing.location.lng}&zoom=12`}
                   allowFullScreen
                 ></iframe>
               </div>
