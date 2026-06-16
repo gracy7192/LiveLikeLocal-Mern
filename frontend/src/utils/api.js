@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://livelikelocal-mern-1.onrender.com/api',
 });
 
 // Attach token to every request
